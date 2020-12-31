@@ -1,0 +1,27 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import "bootstrap";
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    font-family: 'Abril Fatface', ;
+    text-align: center;
+  }
+
+  p {
+    font-family: 'Gochi Hand', ;
+    margin: 25px 75px 75px 100px;
+  }
+
+ .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+ }
+
+ 

@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Gochi+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Gochi+Hand&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body onload = "startTimer()">
+
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="http://localhost:3000/">HOME</a>
+  <form class="form-inline">
+    <a class="btn btn-outline-primary" href="http://localhost:3000/contact/index" role="button">
+    CONTACT US
+    </a>
+    <div style="padding-left: 10px;">
+      <a class="btn btn-outline-primary" href="http://localhost:3000/" role="button">
+      PROJECTS
+      </a>
+    </div>
+    <div style="padding-left: 10px;">
+      <a class="btn btn-outline-primary" href="http://localhost:3000/" role="button">
+      NEW DEVELOPMENT
+      </a>
+    </div>
+    <div style="padding-left: 10px;">
+      <a class="btn btn-outline-primary" href="http://localhost:3000/infos" role="button">
+      REQUEST MORE INFO
+      </a>
+    </div>
+    <div style="padding-left: 10px;">
+      <a class="btn btn-outline-primary" href="http://localhost:3000/comments" role="button">
+      LEAVE A MESSAGE
+      </a>
+    </div>
+  </form>
+</nav>
+    
+
+<script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 3000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "http://www.resilandhomes.com/images/home/1.jpg";
+          images[1] = "http://www.resilandhomes.com/images/home/2.jpg";
+          images[2] = "http://www.resilandhomes.com/images/home/3.jpg";
+          images[3] = "http://www.resilandhomes.com/images/home/4.jpg";
+          images[4] = "http://www.resilandhomes.com/images/home/5.jpg";
+          images[5] = "http://www.resilandhomes.com/images/home/6.jpg";
+          images[6] = "http://www.resilandhomes.com/images/home/7.jpg";
+          images[7] = "http://www.resilandhomes.com/images/home/8.jpg";
+          images[8] = "http://www.resilandhomes.com/images/home/9.jpg";
+          images[9] = "http://www.resilandhomes.com/images/home/10.jpg";
+          images[10] = "http://www.resilandhomes.com/images/home/11.jpg";
+          images[11] = "http://www.resilandhomes.com/images/home/12.jpg";
+          images[12] = "http://www.resilandhomes.com/images/home/13.jpg";
+          images[13] = "http://www.resilandhomes.com/images/home/14.jpg";
+          images[14] = "http://www.resilandhomes.com/images/home/15.jpg";
+          images[15] = "http://www.resilandhomes.com/images/home/16.jpg";
+      </script>
+
+<h1> <img src="http://www.resilandhomes.com/images/resilandhomes.jpg" alt="Resiland Homes"></h1>
+<h2>Welcome to Resiland Homes</h2>
+</head>
+
+
+
+
+<img id="img" src="http://www.resilandhomes.com/images/home/1.jpg" class="center"/>
+      
+
+<p>Resiland Inc. is a Houston based custom home builder. It started its business since 2005 when Houston downtown is being rebuilt. Since then it continues offering its new home designs in many high desirable communities featuring upscale, urban living at unmatched values in Houston loop area. Whether you’re relocating to Houston or simply making a move within the city, you’ll be amazed by our charming communities filled with unique architecture. Resiland is committed to consistently deliver the high quality home and customer services to you. It begins with our ability to locate prime parcels of land, first-rate materials and the top suppliers. And it continues on with our experienced architectures and engineers, high-quality exterior and interior home options to our effective management of new home construction. Resiland takes great pride in constructing the superior dwelling houses of your dream. Resiland team of professionals and skilled staffs take your business seriously and the company has proved itself to be the leading builder of delivering the supreme qualities to our clients. Resiland strongly believes in client satisfaction. Each project is undertaken with the client as a partner. Client’s satisfaction is always the ultimate goal and measurements. </p>
+
+</body>
+
+
+
+</html>
