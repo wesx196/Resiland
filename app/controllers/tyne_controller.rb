@@ -1,0 +1,2 @@
+class TyneController < ApplicationController
+end

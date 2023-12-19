@@ -5,11 +5,11 @@ class CommentMailer < ApplicationMailer
   #
   #   en.comment_mailer.new_comment.subject
   #
-  def new_comment(comment)
+  def new_appt(appt)
     @comment =params[:comment]
-    @item = @comment.item
+    @item = @appt.item
 
-    mail to: @item.user.email,
-         subject: "New Comment for #{@item.name}"
+    mail to: @item.appt.email,
+         subject: "Appointment reminder for #{@item.name}"
   end
 end

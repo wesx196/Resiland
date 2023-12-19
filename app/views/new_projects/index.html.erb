@@ -1,0 +1,48 @@
+<% if notice %>
+  <aside id="notice"><%= notice %></aside>
+<% end %>
+
+<h1> <a href="http://localhost:3000/"><%= image_tag("logos/logo.PNG") %></a></h1>
+
+
+<table>
+  <tfoot>
+    <tr>
+      <td colspan="3">
+        <%= link_to 'New project', new_new_project_path %>
+      </td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <% @new_projects.each do |new_project| %>
+      <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+
+        <td class="image">
+          <%= image_tag(new_project.img_url, :size => '270x291', class: 'list_image') %>
+        </td>
+
+        <td class="description">
+          <h1><%= new_project.title %></h1>
+          <p>
+            <%= truncate(strip_tags(new_project.description),
+                         length: 80) %>
+            <br><br>Available date: <%= new_project.date %>
+          </p>
+        </td>
+
+        <td class="actions">
+          <ul>
+            <li><%= link_to 'Show', new_project %></li>
+            <li><%= link_to 'Edit', edit_new_project_path(new_project) %></li>
+            <li>
+              <%= button_to 'Destroy',
+                           new_project, 
+                          method: :delete,
+                          data: { confirm: 'Are you sure?' } %>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

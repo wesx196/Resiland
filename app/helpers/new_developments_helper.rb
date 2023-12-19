@@ -1,0 +1,2 @@
+module NewDevelopmentsHelper
+end

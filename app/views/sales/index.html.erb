@@ -1,0 +1,49 @@
+<% if notice %>
+  <aside id="notice"><%= notice %></aside>
+<% end %>
+
+<h1> <a href="http://localhost:3000/"><%= image_tag("logos/logo.PNG") %></a></h1>
+
+
+<table>
+  <tfoot>
+    <tr>
+      <td colspan="3">
+        <%= link_to 'New sale', new_sale_path %>
+      </td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <% @sales.each do |sale| %>
+      <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+
+        <td class="image">
+          <%= image_tag(sale.img_url, :size => '270x291', class: 'list_image') %>
+        </td>
+
+        <td class="description">
+          <h1><%= sale.title %></h1>
+          <p>
+            <%= truncate(strip_tags(sale.description),
+                         length: 80) %>
+            <br><br><b>Price: $<%= sale.price %><b>
+          </p>
+          
+        </td>
+
+        <td class="actions">
+          <ul>
+            <li><%= link_to 'Show', sale %></li>
+            <li><%= link_to 'Edit', edit_sale_path(sale) %></li>
+            <li>
+              <%= link_to 'Destroy',
+                           sale, 
+                          method: :delete,
+                          data: { confirm: 'Are you sure?' } %>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

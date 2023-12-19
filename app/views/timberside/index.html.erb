@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+
+
+<h1> <a href="http://localhost:3000/"><%= image_tag("logos/logo.PNG") %></a></h1>
+<h1>Timberside</h1>
+  
+<script>
+        writeMenu();
+        if (window.addEventListener)
+        window.addEventListener("load", createcssmenu2, false)
+        else if (window.attachEvent)
+        window.attachEvent("onload", createcssmenu2)
+    </script>
+
+       <script type="text/javascript">
+            var image1=new Image()
+            image1.src="http://resilandhomes.com/images/Timberside/1.jpg"
+            var image2=new Image()
+            image2.src="http://resilandhomes.com/images/Timberside/2.jpg"
+            var image3=new Image()
+            image3.src="http://resilandhomes.com/images/Timberside/3.jpg"
+            
+            
+     </script>  
+     <img src="http://resilandhomes.com/images/Timberside/1.jpg" name="slide" height="500" STYLE="border-radius: 5%" class="center" />
+     <script type="text/javascript">
+     
+       //variable that will increment through the images
+       var step=1
+       function slideit(){
+       //if browser does not support the image object, exit.
+       if (!document.images)
+       return
+       document.images.slide.src=eval("image"+step+".src")
+       if (step<31)
+       step++
+       else
+       step=1
+       //call function "slideit()" every 2.5 seconds
+       setTimeout("slideit()",2500)
+       }
+       slideit()
+      
+   </script>
+   <table align = "center">
+<tr><td width="8"></td><td valign="top">The Texas Medical Center is the largest medical center in the world. The area also has one of the highest concentrations of clinical facilities for patient care, basic science, and translational research.
+
+In addition to the healthcare facilities, Medical Center real estate is not only popular with doctors, residents, nurses, technicians and patients but also in high demand thanks to:<br><br>
+
+* TOP RANKED SCHOOLS: According to Houston’s Best Public Schools, many of public schools within the Medical Center are ranked amongst the top in the state of Texas. Roberts Elementary, Poe Elementary, Pershing Middle and Lamar High School are among the highly rated public schools zoned to the neighborhood. Bellaire High School is known for its academics and extracurricular activities in the greater Houston area and Texas and is also zoned to the neiborhoods.<br><br>
+* STRONG REAL ESTATE APPRECIATION: Medical Center’s real estate market has been one of the best performing suburban Houston neighborhoods over the past one, five and ten-year periods.<br><br>
+* WIDE RANGE OF HOMES: The Medical Center features a wide selection of homes including single-family homes, townhomes, and condos. <br><br>
+
+* CENTRAL LOCATION: Living in the medical center affords a fantastic commute to anyone working in the complex.  In addition, the Medical Center is a few minutes away from Downtown Houston. Other Loop 610 neighborhoods are conveniently accessible from the district, including Rice University, Museum District, and West University.<br><br>
+* GREAT ACCESSIBILITY: Residents enjoy having easy access to the state’s largest medical complex. The Texas Medical Center area also has three METRORail Red Line stations, as well as direct access to three major freeways: South, Southwest, and Loop 610.<br><br>
+* ACCESS TO ENTERTAINMENT: With the Museum District, NRG Stadium, and Hermann Park within minutes of the neighborhood, the Medical Center homes are minutes away from a wide variety of entertainment options.</td><td width="8">
+</td>
+</tr>
+</table>
+   
+
+</body>
+</html>
+
